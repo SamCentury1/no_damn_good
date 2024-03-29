@@ -1,5 +1,6 @@
 import React from 'react'
 import './ScribbyPrivacyPolicy.css'
+
 const ScribbyPrivacyPolicy = () => {
   return (
     <div className='scribby-privacy-policy-container'>

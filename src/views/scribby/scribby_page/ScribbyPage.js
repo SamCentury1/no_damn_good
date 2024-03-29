@@ -1,9 +1,18 @@
 import React from 'react'
 import './ScribbyPage.css'
 import ScribbyGamePlay from './components/scribby_gameplay/ScribbyGameplay'
-import ScribbyPrivacyPolicy from './components/scribby_privacy_policy/ScribbyPrivacyPolicy'
+// import ScribbyPrivacyPolicy from '../privacy_policy_page/ScribbyPrivacyPolicy'
+import { useNavigate } from "react-router-dom";
 
 const ScribbyPage = () => {
+
+
+  const navigate = useNavigate();
+  function hello() {
+    navigate(`/games/scribby/privacy-policy`)
+    console.log(`go to the route`);
+  }
+
   return (
     <>
         <div className='scribby-page-container'>
@@ -18,13 +27,15 @@ const ScribbyPage = () => {
                     <RightPanelItem text={'Instructions'} />
                     <RightPanelItem text={'How To Be Good'} />
                     <RightPanelItem text={'Gameplay'} />
-                    <RightPanelItem text={'Rankings'} />
-                    <RightPanelItem text={'Privacy Policy'} />
+                    {/* <RightPanelItem text={'Rankings'} /> */}
+                    <div onClick={hello} >
+
+                      <RightPanelItem text={'Privacy Policy'} />
+                    </div>
                 </div>
             </div>
         </div>
         <ScribbyGamePlay />
-        <ScribbyPrivacyPolicy />
     </>
 
   )
@@ -35,6 +46,11 @@ export default ScribbyPage
 
 
 export const RightPanelItem = ({text}) => {
+
+
+
+
+
   return (
     <>
         <div className='scribby-right-panel-item'>{text}</div>
