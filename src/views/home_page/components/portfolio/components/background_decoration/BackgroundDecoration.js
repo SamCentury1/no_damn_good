@@ -33,36 +33,7 @@ const BackgroundDecoration = () => {
             {displayDecorations()}
             {displayDecorations()}
             {displayDecorations()}
-            {displayDecorations()}
-            {displayDecorations()}  
-            {displayDecorations()}
-            {displayDecorations()}
-            {displayDecorations()}
-            {displayDecorations()}
-            {displayDecorations()}
-            {displayDecorations()}   
-            {displayDecorations()}
-            {displayDecorations()}
-            {displayDecorations()}
-            {displayDecorations()}
-            {displayDecorations()}
-            {displayDecorations()}
-            {displayDecorations()}
-            {displayDecorations()}
-            {displayDecorations()}
-            {displayDecorations()}
-            {displayDecorations()}  
-            {displayDecorations()}
-            {displayDecorations()}
-            {displayDecorations()}
-            {displayDecorations()}
-            {displayDecorations()}
-            {displayDecorations()}   
-            {displayDecorations()}
-            {displayDecorations()}
-            {displayDecorations()}
-            {displayDecorations()}
-            {displayDecorations()}            
+    
                                                                                  
         </div>
     )
