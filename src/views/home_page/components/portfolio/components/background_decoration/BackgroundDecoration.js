@@ -6,10 +6,6 @@ const BackgroundDecoration = () => {
 
     function displayDecorations() {
 
-            const colors = [
-
-            ]
-            
 
 
             const randomNumberInRange = (min, max) => {
