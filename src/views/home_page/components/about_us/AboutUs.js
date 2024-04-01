@@ -1,7 +1,13 @@
 import React from 'react'
 import './AboutUs.css'
+import {motion} from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 
 const AboutUs = () => {
+  const navigate = useNavigate();
+  function navigateToAbout() {
+    navigate(`/about`)
+  }  
   return (
     <div className='about-us-container'>
         <div className='about-us-label-container'>
@@ -19,7 +25,15 @@ const AboutUs = () => {
               </p>
 
             </div>
-            <button className='learn-more-button'>Learn More</button>
+            <motion.button 
+              className='learn-more-button'
+              whileHover={{
+                scale:1.1, 
+                backgroundColor: '#FFFFFFFF',
+                color: "#000000"
+              }}
+              onClick={navigateToAbout}
+            >Learn More</motion.button>
           </div>
           <div className='about-us-content-image-container'>
             <img className='about-us-content-image' src={require('../../../../assets/img/phones-image-removebg-preview.png')} alt='' />

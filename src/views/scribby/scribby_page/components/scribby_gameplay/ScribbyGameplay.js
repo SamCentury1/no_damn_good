@@ -3,7 +3,7 @@ import './ScribbyGameplay.css'
 
 const ScribbyGameplay = () => {
   return (
-    <div className='scribby-gameplay-container'>
+    <div id='gameplay' className='scribby-gameplay-container'>
         <div className='scribby-gameplay-section-header'>Gameplay</div>
     </div>
   )

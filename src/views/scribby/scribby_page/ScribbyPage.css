@@ -36,6 +36,14 @@
     width: 60%;
 }
 
+.scribby-right-panel-item-container {
+    /* background-color: orange; */
+    width: 100%;
+    /* height: 88px; */
+    position: relative;
+}
+
+
 .scribby-right-panel-item {
     font-size: 44px;
 }

@@ -1,0 +1,36 @@
+.separator-container {
+    height: 20vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black */
+}
+
+.separator-pink {
+    height: 2px;
+    width: 80%;
+    background: linear-gradient( 90deg,  #8334cb ,  #f81ce5 , #8334cb) ;
+    margin: auto;
+} 
+
+
+
+/************** SMALL SCREEN *************/
+
+@media screen and (max-width: 800px) {
+
+    .separator-container {
+        height: 2vh;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: black */
+    }
+
+}
