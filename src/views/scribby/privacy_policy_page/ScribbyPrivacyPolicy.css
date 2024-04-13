@@ -3,4 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
+}
+
+.scribby-privacy-policy-sub-container {
+    width: 90%;
+    margin: auto;
+
 }
