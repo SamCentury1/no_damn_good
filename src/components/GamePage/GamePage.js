@@ -25,11 +25,7 @@ const GamePage = ({gameData}) => {
     useEffect(() => {
         const getData = async () => {
             setData(gameData);
-            // let items = []
-            // for (var i=0; i<gameData.images; i++) {
-            //     items.push(`../../assets/img/${gameData.gameName}/gameplay_${i}.png`)
-            // }
-            // setLinks(items);
+
             setLoaded(true);
         }
         return () => {getData()}
