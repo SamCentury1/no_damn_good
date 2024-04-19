@@ -1,6 +1,13 @@
+.scribby-page {
+    /* height: 100%; */
+}
+.nav-bar-gap {
+    height: 60px;
+}
+
 .scribby-page-container {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 60px);
     background-color: black;
     display: flex;
     flex-direction: row;
@@ -13,8 +20,38 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
+.scribby-main-logo-container {
+    width: 60%;
+    /* height: 70%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+.scribby-main-logo {
+    border-radius: 10%;
+    width: 100%;
+}
+
+.scribby-app-store-container {
+    padding: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+.scribby-app-store-logo {
+    max-width: 200px;
+    padding: 5px;
+    /* max-height: 50px; */
+}
 
 .scribby-left-panel-heading {
     font-size: 88px;
@@ -32,8 +69,16 @@
     align-items: center;
 }
 
+/* .scribby-page-container {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
 .scribby-right-panel-container {
-    width: 60%;
+    width: 90%;
 }
 
 .scribby-right-panel-item-container {
@@ -61,7 +106,7 @@
 @media only screen and (max-width: 768px) {
     .scribby-page-container {
         width: 100%;
-        height: 50vh;
+        /* height: 50vh; */
         background-color: black;
         display: flex;
         flex-direction: column;
@@ -70,7 +115,7 @@
     }
 
     .scribby-left-panel {
-        /* width: 50%; */
+        width: 90%;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -79,6 +124,15 @@
         text-align: center;
         margin: auto;
     }
+    .scribby-main-logo-container {
+        width: 90%;
+        /* height: 70%; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;    
+    }
+    
     .scribby-left-panel-heading {
         font-size: 60px;
         color: rgb(182, 228, 230);
@@ -86,5 +140,13 @@
     .scribby-right-panel {
         display: none;
     }
+
+    .scribby-app-store-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }    
 
 }

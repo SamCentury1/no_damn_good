@@ -1,0 +1,227 @@
+
+
+.game-page-container {
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.game-left-panel {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-main-logo-container {
+    width: 60%;
+    /* height: 70%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+
+.game-main-logo {
+    border-radius: 10%;
+    width: 100%;
+}
+
+.game-app-store-container {
+    padding: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+.game-app-store-logo {
+    max-width: 200px;
+    padding: 5px;
+}
+
+.game-right-panel {
+    width: 50%;
+    background-color: rgb(188, 192, 206);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-right-panel-container {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+
+.gameplay-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.game-right-panel-label {
+    font-size: 44px;
+    color: black;
+    text-align: center;
+}
+.game-right-panel-label-sub {
+    font-size: 34px;
+    color: black;
+    text-align: center;    
+}
+.game-right-panel-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.game-text-element {
+    color: rgb(58, 57, 57);
+    font-size: 24px;
+    padding: 10px;
+}
+
+.game-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.game-section-label {
+    font-size: 64px;
+    color: white;
+
+}
+
+.game-right-panel-item-container {
+    width: 100%;
+    position: relative;
+}
+
+.game-right-panel-item {
+    font-size: 44px;
+}
+
+.game-right-panel-item-divider {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
+
+
+.game-gameplay-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    padding: 30px 0px;
+    width: 100%;
+}
+
+.game-details-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;
+    align-items: center;    
+    padding: 30px 0px;    
+}
+.gameplay-image {
+    height: 600px;
+}
+
+.game-right-panel-links {
+    padding: 20px 0px;
+}
+
+/* ================================================================
+========================= MOBILE =================================
+================================================================= */
+@media only screen and (max-width: 768px) {
+    .game-page-container {
+        height: 100%;
+        /* height: calc(100vh - 60px); */
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .game-left-panel {
+        width: 90%;
+        /* height: 100%; */
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .game-main-logo-container {
+        width: 90%;
+        /* height: 70%; */
+        /* height: 300px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    .game-main-logo {
+        border-radius: 10%;
+        width: 100%;
+    }    
+    
+    .game-app-store-container {
+        padding: 20px 0px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .game-right-panel {
+        width: 100%;
+        /* background-color: rgb(188, 192, 206); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .game-right-panel-label {
+        font-size: 36px;
+        color: black;
+        text-align: center;
+    }
+    .game-right-panel-label-sub {
+        font-size: 24px;
+        color: black;
+        text-align: center;    
+    }
+    .game-text-element {
+        color: rgb(39, 39, 39);
+        font-size: 18px;
+        padding: 10px;
+    }
+    
+    
+}

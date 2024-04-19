@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './ScribbyPrivacyPolicy.css'
 import Footer from '../../../components/Footer/Footer'
+import NavBar from '../../../components/NavBar/NavBar'
 
 const ScribbyPrivacyPolicy = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);    
+
+
   return (
     <div className='scribby-privacy-policy-container'>
+      <NavBar/>
+      <div className='nav-bar-gap'></div >
       <div className='scribby-privacy-policy-sub-container'>
         <strong>Privacy Policy</strong>
         <p>This privacy policy applies to the Scribby app (hereby referred to as "Application") for mobile devices that was created by No Damn Good Studios (hereby referred to as "Service Provider") as a Free service. This service is intended for use "AS IS".</p>

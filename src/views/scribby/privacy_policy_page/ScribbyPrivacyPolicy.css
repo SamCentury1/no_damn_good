@@ -1,13 +1,26 @@
 .scribby-privacy-policy-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: ; */
     align-items: center;
     background-color: white;
 }
 
 .scribby-privacy-policy-sub-container {
-    width: 90%;
+    
+    width: 50%;
     margin: auto;
 
+}
+.nav-bar-gap {
+    height: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+    .scribby-privacy-policy-sub-container {
+    
+        width: 90%;
+        margin: auto;
+    
+    }
 }

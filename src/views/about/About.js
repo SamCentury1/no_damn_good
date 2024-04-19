@@ -1,15 +1,21 @@
 import React from 'react'
 import Footer from '../../../src/components/Footer/Footer.js'
 import './About.css'
+import NavBar from '../../components/NavBar/NavBar.js'
 
 const About = () => {
   return (
     <div className='about-main-container'>
+        <NavBar/>
+        
         <div className='about-background-image-container'>
+            
             <img className='about-background-image' src={require('../../assets/img/montreal-dark-map.png')} alt=''/>
         </div>    
         <div className='about-container'>
+            
             <div className='about-title-container'>
+                <div className='nav-bar-gap'></div> 
                 <div className='about-title-text'>About No Damn Good</div>
             </div>
 

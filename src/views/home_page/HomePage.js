@@ -6,10 +6,12 @@ import Porfolio from './components/portfolio/Porfolio'
 import Landing from './components/landing/Landing'
 import Separator from './components/separator/Separator'
 import Footer from '../../components/Footer/Footer'
+import NavBar from '../../components/NavBar/NavBar'
 
 const HomePage = () => {
   return (
-    <div className='homepage-container'>    
+    <div className='homepage-container'>
+      <NavBar/>  
       <Landing/>
       <AboutUs />
       <Separator/>

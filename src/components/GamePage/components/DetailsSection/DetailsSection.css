@@ -1,0 +1,103 @@
+.details-section-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.details-section-content-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding: 20px 0px;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.details-section-content-inner-container {
+    width: 90%;
+    margin: auto;
+}
+
+.details-section-content-label {
+    font-size: 46px;
+    color: white;
+    
+    text-align: center;
+}
+
+.details-section-content-text {
+    font-size: 32px;
+    color: white;
+    padding: 10px 0px;
+    font-weight: 100;
+    text-align: justify;
+    
+
+}
+
+.details-section-media-container {
+    width: 50%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-section-media-image{
+    height:250px
+}
+
+
+/* ================================================================
+========================= MOBILE =================================
+================================================================= */
+@media only screen and (max-width: 768px) {
+    .details-section-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-end;
+        /* justify-content: center;
+        align-items: center; */
+    }
+    .details-section-content-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        padding: 20px 0px;
+        margin: auto;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    .details-section-content-label {
+        font-size: 36px;
+        color: white;
+        text-align: center;
+    }
+    
+    .details-section-content-text {
+        font-size: 22px;
+        color: white;
+        padding: 10px 0px;
+        font-weight: 100;
+        text-align: justify;
+    }
+    .details-section-media-image{
+        height:150px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-200%);
+        opacity: 0.35;
+
+    }
+    
+}
