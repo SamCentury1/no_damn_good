@@ -86,15 +86,14 @@ const Carousel = ({gameData}) => {
         var initial = {}
         var animate = {}
         if (direction === 'left') {
-            initial = {x:'-150%', scale: 0.5}            
-            animate = {x:'-250%', scale: 0.0}                    
-
-        } else if (direction === 'right') {
             initial = {x:'-250%', scale: 0.0}
-            animate = {x:'-250%', scale: 0.0}              
+            animate = {x:'-250%', scale: 0.0}
+        } else if (direction === 'right') {
+            initial = {x:'-150%', scale: 0.5}
+            animate = {x:'-250%', scale: 0.0}
         } else {
             initial = {x:'-250%', scale: 0.0}
-            animate = {x:'-250%', scale: 0.0}            
+            animate = {x:'-250%', scale: 0.0}
         }
 
         return {"initial": initial, "animate" : animate}
@@ -105,15 +104,14 @@ const Carousel = ({gameData}) => {
         var initial = {}
         var animate = {}
         if (direction === 'left') {
-            initial = {x:'0%', scale: 1.0}            
-            animate = {x:'-150%', scale: 0.5}                    
-
-        } else if (direction === 'right') {
             initial = {x:'-250%', scale: 0.0}
-            animate = {x:'-150%', scale: 0.5}              
+            animate = {x:'-150%', scale: 0.5}            
+        } else if (direction === 'right') {
+            initial = {x:'0%', scale: 1.0}
+            animate = {x:'-150%', scale: 0.5}            
         } else {
             initial = {x:'-150%', scale: 0.5}
-            animate = {x:'-150%', scale: 0.5}            
+            animate = {x:'-150%', scale: 0.5}
         }
 
         return {"initial": initial, "animate" : animate}
@@ -125,14 +123,14 @@ const Carousel = ({gameData}) => {
         var initial = {}
         var animate = {}
         if (direction === 'left') {
-            initial = {x:'150%', scale: 0.5}
-            animate = {x:'0%', scale: 1}
+            initial = {x:'-150%', scale: 0.5}
+            animate = {x:'0%', scale: 1.0}            
         } else if (direction === 'right'){
-            initial = {x:'-150%', scale: 0.5}            
-            animate = {x:'0%', scale: 1.0}
+            initial = {x:'150%', scale: 0.5}
+            animate = {x:'0%', scale: 1}            
         } else {
             initial = {x:'0%', scale: 1}
-            animate = {x:'0%', scale: 1}    
+            animate = {x:'0%', scale: 1}
         }
         return {"initial": initial, "animate" : animate}
     }
@@ -142,14 +140,14 @@ const Carousel = ({gameData}) => {
         var initial = {}
         var animate = {}
         if (direction === 'left') {
-            initial = {x:'250%', scale: 0.0}
-            animate = {x:'150%', scale: 0.5}              
+            initial = {x:'0%', scale: 1.0}
+            animate = {x:'150%', scale: 0.5}            
         } else if (direction === 'right') {
-            initial = {x:'0%', scale: 1.0}            
-            animate = {x:'150%', scale: 0.5}                      
+            initial = {x:'250%', scale: 0.0}
+            animate = {x:'150%', scale: 0.5}            
         } else {
             initial = {x:'150%', scale: 0.5}
-            animate = {x:'150%', scale: 0.5}          
+            animate = {x:'150%', scale: 0.5}
         }
         return {"initial": initial, "animate" : animate}
     }
@@ -159,15 +157,14 @@ const Carousel = ({gameData}) => {
         var initial = {}
         var animate = {}
         if (direction === 'left') {
-            initial = {x:'250%', scale: 0.0}            
-            animate = {x:'250%', scale: 0.0}                    
-
-        } else if (direction === 'right') {
             initial = {x:'150%', scale: 0.5}
-            animate = {x:'250%', scale: 0.0}              
-        } else {
+            animate = {x:'250%', scale: 0.0}            
+        } else if (direction === 'right') {
             initial = {x:'250%', scale: 0.0}
             animate = {x:'250%', scale: 0.0}            
+        } else {
+            initial = {x:'250%', scale: 0.0}
+            animate = {x:'250%', scale: 0.0}
         }
 
         return {"initial": initial, "animate" : animate}
@@ -194,7 +191,7 @@ const Carousel = ({gameData}) => {
                     >
                         <img 
                             className='carousel-image side-image' 
-                            src={require(`../../../../assets/img/${data.gameName}/gameplay_${getCurrentIndexNumber(currentIndex+2, data.images)}.png`)} 
+                            src={require(`../../../../assets/img/${data.gameName}/gameplay_${getCurrentIndexNumber(currentIndex-2, data.images)}.png`)} 
                             alt=''
                             
                         />
@@ -210,7 +207,7 @@ const Carousel = ({gameData}) => {
                     >
                         <img 
                             className='carousel-image' 
-                            src={require(`../../../../assets/img/${data.gameName}/gameplay_${getCurrentIndexNumber(currentIndex+1, data.images)}.png`)} 
+                            src={require(`../../../../assets/img/${data.gameName}/gameplay_${getCurrentIndexNumber(currentIndex-1, data.images)}.png`)} 
                             alt=''
                             
                         />
@@ -238,7 +235,7 @@ const Carousel = ({gameData}) => {
                     >
                         <img 
                             className='carousel-image' 
-                            src={require(`../../../../assets/img/${data.gameName}/gameplay_${getCurrentIndexNumber(currentIndex-1,data.images)}.png`)} 
+                            src={require(`../../../../assets/img/${data.gameName}/gameplay_${getCurrentIndexNumber(currentIndex+1,data.images)}.png`)} 
                             alt=''
                             
                         />
@@ -253,7 +250,7 @@ const Carousel = ({gameData}) => {
                     >
                         <img 
                             className='carousel-image side-image' 
-                            src={require(`../../../../assets/img/${data.gameName}/gameplay_${getCurrentIndexNumber(currentIndex-2,data.images)}.png`)} 
+                            src={require(`../../../../assets/img/${data.gameName}/gameplay_${getCurrentIndexNumber(currentIndex+2,data.images)}.png`)} 
                             alt=''
                         />
                     </motion.div>                    

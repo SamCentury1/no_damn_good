@@ -6,6 +6,7 @@ import HomePage from './views/home_page/HomePage';
 import About from './views/about/About';
 import ScribbyPage2 from './views/scribby/ScribbyPage2';
 import PrivacyPage from './components/PrivacyPage/PrivacyPage';
+import GamesPage from './views/games_page/GamesPage';
 // import NavBar from './components/NavBar/NavBar';
 // import Footer from './components/Footer'
 
@@ -23,6 +24,9 @@ function App() {
           <Route path="/games/scribby/privacy-policy" element={<PrivacyPage appName={'Scribby: Word Puzzle Game'} effectiveDate={'2024-03-23'}/>} /> 
 
           <Route path="/about" element={<About/>} />
+
+          <Route path="/games" element={<GamesPage/>} />
+
           
         </Routes>
         

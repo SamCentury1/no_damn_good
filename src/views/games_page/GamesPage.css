@@ -1,0 +1,55 @@
+.games-page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+.games-page-head-container {
+    background-color: blue;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.game-page-head-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit:cover;
+}
+
+.games-page-head-label {
+    font-size: 124px;
+    color: white;
+    z-index: 1;
+    
+}
+
+.games-page-content-section {
+    height: 100vh;
+    background-color: black;
+    padding: 20px 0px;
+}
+
+.coming-soon-label {
+    width: 90%;
+    font-size: 44px;
+    color: white;
+    font-weight: 100;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.coming-soon-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
