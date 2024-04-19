@@ -7,9 +7,9 @@ const DetailsSection = ({content,index, gameName}) => {
     const [loaded, setLoaded] = useState(false);
     const [data, setData] = useState({})
     // const [flexDirection, setFlexDirection] = useState('row')
-    const [bg, setBg] = useState('#EEEEEE')
+    // const [bg, setBg] = useState('#EEEEEE')
     const [style,setStyle] = useState({})
-    const [name,setName] = useState('')
+    // const [name,setName] = useState('')
 
     useEffect(() => {
         const getData = async () => {
@@ -19,7 +19,7 @@ const DetailsSection = ({content,index, gameName}) => {
             var flexDirection = 'row'
             if (isOdd > 0) {
                 // setFlexDirection('row-reverse')
-                setBg("#DDDDDD")
+                // setBg("#DDDDDD")
                 flexDirection = 'row-reverse'
             }
             var style = {}
@@ -31,7 +31,7 @@ const DetailsSection = ({content,index, gameName}) => {
                 "flexDirection": flexDirection,              
             }
             setStyle(style)
-            setName(gameName)
+            // setName(gameName)
         }
         return () => {getData()}
 
