@@ -24,8 +24,7 @@ const GamePage = ({gameData}) => {
 
             setLoaded(true);
         }
-        return () => {getData()}
-
+        getData()
 
     }, [gameData]);
 
