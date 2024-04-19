@@ -15,12 +15,8 @@ const GamePage = ({gameData}) => {
         window.scrollTo(0, 0);
       }, []);    
 
-
-    // const gameName = gameData.gameName;
-    // const textSynopsis = gameData.synopsisText
     const [loaded, setLoaded] = useState(false);
     const [data, setData] = useState({})
-    // const [links, setLinks] = useState([])
 
     useEffect(() => {
         const getData = async () => {
@@ -38,8 +34,7 @@ const GamePage = ({gameData}) => {
     function hello(route) {
       navigate(route)
     }
-    ///games/scribby/privacy-policy
-  
+
 
     const gameplayRef = useRef(null);
     const scrollToGamePlay = () => {
@@ -53,7 +48,8 @@ const GamePage = ({gameData}) => {
 
 
     if (!loaded) {
-        return <div>loading</div>
+        console.log("loading")
+        return <div style={{color: "#FFFFFF"}}>loading</div>
     } else {
 
         return (
