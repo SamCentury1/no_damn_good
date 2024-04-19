@@ -29,7 +29,7 @@ const Carousel = ({gameData}) => {
             // }
             
         }
-        return () => {getData()}
+        getData()
 
 
     }, [gameData]);

@@ -33,7 +33,7 @@ const DetailsSection = ({content,index, gameName}) => {
             setStyle(style)
             // setName(gameName)
         }
-        return () => {getData()}
+        getData()
 
 
     }, [content,index,gameName]);
