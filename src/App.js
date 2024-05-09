@@ -7,6 +7,7 @@ import About from './views/about/About';
 import ScribbyPage2 from './views/scribby/ScribbyPage2';
 import PrivacyPage from './components/PrivacyPage/PrivacyPage';
 import GamesPage from './views/games_page/GamesPage';
+import ContactUs from './views/contact_us/ContactUs';
 // import NavBar from './components/NavBar/NavBar';
 // import Footer from './components/Footer'
 
@@ -27,7 +28,14 @@ function App() {
 
           <Route path="/games" element={<GamesPage/>} />
 
-          
+          <Route path="/contact-us" element={<ContactUs/>} />
+
+
+          {/* Social Media External Links: */}
+          <Route path='/instagram' component={() => {
+              window.location.href = 'https://www.instagram.com/nodamngoodstudios/';
+              return null;
+          }}/>          
         </Routes>
         
       </div>

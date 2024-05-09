@@ -31,8 +31,8 @@ const About = () => {
                             <p className='glass-effect'>Founded in 2024, we trace our fresh roots to the Canadian neighbourhood of Notre-Dame-de-Grâce in Montréal, Québec.</p>
 
                             <p className='glass-effect'>The Neighbourhood is known in Montréal as NDG (en dee gee) and its proud residents have affectionately referred to it as No Damn Good</p>
-                            <p className='glass-effect'>NDG being the cradle of the founding members, and being a great source of inspiration for the culture of the company, the studio was name No Damn Good in its honor</p>
-                            <p className='glass-effect'>Fast forward to, still 2024, the company boasts a whopping 1 employee and 1 cat</p>
+                            <p className='glass-effect'>NDG being the cradle of the founding members, and being a great source of inspiration for the culture of the company, the studio was named in its honor</p>
+                            <p className='glass-effect'>Fast forward to, still 2024, the company boasts a whopping 1 employee and 1 cat. And the neighbourhood is still not good</p>
 
                         </div>
                     </div>
@@ -104,7 +104,7 @@ const About = () => {
                 <div className='about-mission-container'>
                     <div className='about-content-section-label'>Mission</div>
                     <div className='mission-content-container'>
-                        No Damn Good Studios is committed to creating and delivering engaging and amuzing games and applications.
+                        No Damn Good Studios is committed to creating and delivering engaging and amusing games and applications.
                     </div>
                 </div>
 

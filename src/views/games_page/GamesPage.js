@@ -10,7 +10,7 @@ const GamesPage = () => {
         <NavBar/>
 
         <div className='games-page-head-container'>
-            <img src={require('../../assets/img/temp_games_page_bg.jpg')} alt='' className='game-page-head-image' />
+            <img src={require('../../assets/img/games_page_bg.png')} alt='' className='game-page-head-image' />
 
             <div className='games-page-head-label'>Games</div>
         </div>

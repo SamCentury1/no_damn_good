@@ -96,7 +96,7 @@ const NavBar = () => {
                             initial={{color:'rgba(226, 226, 226, 0.747)', textShadow:""}}
                             // onClick={() => navigateToPage('')}                            
                         >
-                            <Link to="/" className='navbar-item-link'>Contact Us</Link>
+                            <Link to="/contact-us" className='navbar-item-link'>Contact Us</Link>
                         </motion.li>                        
                     </ul>
 

@@ -40,9 +40,11 @@
     align-items: center;
 }
 
+/* TODO: REMOVE DISPLAY:NONE */
 .game-app-store-logo {
     max-width: 200px;
     padding: 5px;
+    display: none; 
 }
 
 .game-right-panel {

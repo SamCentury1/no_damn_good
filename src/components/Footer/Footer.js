@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -22,11 +23,15 @@ const Footer = () => {
         <div className='footer-divider'></div>
         <div className='footer-social-media-container'>
           <div>
-            <img className='footer-social-media-icon' src={require('../../assets/img/facebook-icon-1.svg').default} alt='' />
+            <Link to="https://www.facebook.com/profile.php?id=61559168831861" className='navbar-item-link' >
+              <img className='footer-social-media-icon' src={require('../../assets/img/facebook-icon-1.svg').default} alt='' />
+            </Link>
           </div>
 
           <div>
-            <img className='footer-social-media-icon' src={require('../../assets/img/instagram-icon-1.svg').default} alt='' />
+            <Link to="https://www.instagram.com/nodamngoodstudios/" className='navbar-item-link' >
+              <img className='footer-social-media-icon' src={require('../../assets/img/instagram-icon-1.svg').default} alt='' />
+            </Link>
           </div>
 
           <div>
@@ -35,15 +40,20 @@ const Footer = () => {
 
           <div>
             <img className='footer-social-media-icon' src={require('../../assets/img/tiktok-icon-2.svg').default} alt='' />
-          </div>                        
+          </div> 
+          <div>
+            <Link to="https://www.youtube.com/channel/UC4bpwMdAB5FTq2RimUTD-jw" className='navbar-item-link' >
+              <img className='footer-social-media-icon' src={require('../../assets/img/youtube-123.svg').default} alt='' />
+            </Link>
+          </div>                                 
         </div>
 
         <div className='footer-divider'></div>
         <div className='footer-pages-container'>
-          <div className='footer-pages-item'>Home</div>
-          <div className='footer-pages-item'>About</div>
-          <div className='footer-pages-item'>Portfolio</div>
-          <div className='footer-pages-item'>Contact</div>
+          <div className='footer-pages-item'><Link to="/" className='navbar-item-link' >Home</Link></div>
+          <div className='footer-pages-item'><Link to="/about" className='navbar-item-link'>About</Link></div>
+          <div className='footer-pages-item'><Link to="/games" className='navbar-item-link'>Games</Link></div>
+          <div className='footer-pages-item'><Link to="/contact-us" className='navbar-item-link'>Contact Us</Link></div>
         </div>
       </div>
 
