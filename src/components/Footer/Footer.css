@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-self: flex-end;
     padding-top: 100px;
 
 }
@@ -119,5 +120,16 @@
 }
 
 @media only screen and (max-width: 768px) {
-
+    .footer-container {
+        width: 100%;
+        /* background-color: black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        align-self: flex-end;
+        padding-top: 100px;
+    
+    }
+    
 }

@@ -30,12 +30,7 @@ function App() {
 
           <Route path="/contact-us" element={<ContactUs/>} />
 
-
-          {/* Social Media External Links: */}
-          <Route path='/instagram' component={() => {
-              window.location.href = 'https://www.instagram.com/nodamngoodstudios/';
-              return null;
-          }}/>          
+      
         </Routes>
         
       </div>

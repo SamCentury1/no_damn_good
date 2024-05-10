@@ -4,24 +4,34 @@ import NavBar from '../../components/NavBar/NavBar'
 import Footer from '../../components/Footer/Footer'
 import { Timestamp,collection,addDoc  } from 'firebase/firestore'
 import { db } from '../../firebase-config'
+import {motion } from 'framer-motion'
 
 const ContactUs = () => {
 
 
     const [isSubmit, setIsSubmit] = useState(false)
+    const [errors, setErrors] = useState(false);
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const data = {
-                createdAt: Timestamp.now(),
-                firstName: firstName,
-                lastName: lastName,
-                email: email,
-                message: message
+            /// make sure all fields are populated
+            if (firstName.length === 0 || lastName.length === 0  || email.length === 0  || message.length === 0 ) {
+                setErrors(true)
+            } else {
+
+                const data = {
+                    createdAt: Timestamp.now(),
+                    firstName: firstName,
+                    lastName: lastName,
+                    email: email,
+                    message: message
+                }
+        
+                await addDoc(collection(db,"responses"),data)    
+                setIsSubmit(true); 
+                setErrors(false);       
             }
-    
-            await addDoc(collection(db,"responses"),data)    
-            setIsSubmit(true);        
+
         } catch (e) {
             console.log(e)
         }
@@ -67,13 +77,28 @@ const ContactUs = () => {
                         <div className='contact-form-name-element'>
                             <label className='contact-form-name-label'>
                                 <div className='contact-form-label'>First Name:</div>
-                                <input type='text' name='firstName' id='fName' className='contact-form-input contact-form-name-input' onChange={handleInputChange}/>
+                                <motion.input
+                                    initial={{'borderColor': '#FFFFFF'}} 
+                                    animate={ errors && firstName.length === 0 ? {'borderColor': '#FF0000'} : {'borderColor': '#FFFFFF'}}
+                                    type='text' 
+                                    name='firstName' 
+                                    id='fName' 
+                                    className='contact-form-input contact-form-name-input' 
+                                    onChange={handleInputChange}
+                                />
                             </label>
                         </div>
                         <div className='contact-form-name-element'>
                             <label className='contact-form-name-label'>
                                 <div className='contact-form-label'>Last Name:</div>
-                                <input type='text' name='lastName' id='lName' className='contact-form-input contact-form-name-input' onChange={handleInputChange} />
+                                <motion.input 
+                                    animate={ errors && lastName.length === 0 ? {'borderColor': '#FF0000'} : {'borderColor': '#FFFFFF'}}
+                                    type='text' 
+                                    name='lastName' 
+                                    id='lName' 
+                                    className='contact-form-input contact-form-name-input' 
+                                    onChange={handleInputChange} 
+                                />
                             </label>
                         </div>                        
                      
@@ -82,14 +107,26 @@ const ContactUs = () => {
                         <div className='contact-form-email-element'>
                             <label className='contact-form-name-label'>
                                 <div className='contact-form-label'>Email:</div>
-                                <input type='email' name='email' id='email' className='contact-form-input contact-form-email-input' onChange={handleInputChange}/>
+                                <motion.input 
+                                    animate={ errors && email.length === 0 ? {'borderColor': '#FF0000'} : {'borderColor': '#FFFFFF'}}
+                                    type='email' 
+                                    name='email' 
+                                    id='email' 
+                                    className='contact-form-input contact-form-email-input' 
+                                    onChange={handleInputChange}
+                                />
                             </label>
                         </div>                        
                     </div>
                     <div className='contact-form-message'>
                         <label className='contact-form-name-label'>
                             <div className='contact-form-label'>Message</div>
-                            <textarea id='message' className='contact-form-textarea'onChange={handleInputChange} />
+                            <motion.textarea 
+                                animate={ errors && message.length === 0 ? {'borderColor': '#FF0000'} : {'borderColor': '#FFFFFF'}}
+                                id='message' 
+                                className='contact-form-textarea'
+                                onChange={handleInputChange} 
+                            />
                         </label>
                     </div>
 
@@ -107,6 +144,7 @@ const ContactUs = () => {
     return (
         <div className='contact-container' >
             <NavBar/>
+            <div className='gap-for-nav-in-mobile'></div>
             <div className='contact-header'>Contact Us</div>
             {
 

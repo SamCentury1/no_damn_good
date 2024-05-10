@@ -25,8 +25,7 @@
 .games-page-head-label {
     font-size: 124px;
     color: white;
-    z-index: 1;
-    
+    z-index: 1;   
 }
 
 .games-page-content-section {
@@ -52,4 +51,35 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .games-page-head-label {
+        font-size: 44px;
+        color: white;
+        z-index: 1;   
+    }
+
+    .coming-soon-label {
+        width: 90%;
+        font-size: 36px;
+        color: white;
+        font-weight: 100;
+        margin: auto;
+        padding: 20px 0px;
+        text-align: center;
+    }
+
+    .coming-soon-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    
+    
 }

@@ -185,7 +185,7 @@ const NavBar = () => {
                         <div className='mobile-navbar-item-container'>
                             <div 
                                 className='mobile-nav-menu-elem'
-                                // onClick={() => navigateToPage('')}
+                                onClick={() => navigateToPage('contact-us')}
                             >Contact Us</div>
                         </div>
                     </div>                
