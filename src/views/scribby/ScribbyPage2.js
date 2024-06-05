@@ -4,6 +4,8 @@ import GamePage from '../../components/GamePage/GamePage'
 const ScribbyPage2 = () => {
 
     const gameData = {
+        "title" : "Scribby - Word Puzzle Game",
+        "description" : "An innovative and exciting game to increase your vocabulary!",
         "gameName": "scribby",
         "images": 11,
         "synopsisText": [

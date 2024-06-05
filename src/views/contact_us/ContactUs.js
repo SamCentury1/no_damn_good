@@ -5,6 +5,7 @@ import Footer from '../../components/Footer/Footer'
 import { Timestamp,collection,addDoc  } from 'firebase/firestore'
 import { db } from '../../firebase-config'
 import {motion } from 'framer-motion'
+import { Helmet } from 'react-helmet'
 
 const ContactUs = () => {
 
@@ -68,6 +69,10 @@ const ContactUs = () => {
         } else {
             return (
                 <div className='contact-form-section' >
+                <Helmet>
+                    <title>Contact Us</title>
+                    <meta name="contact-us" content="Contact the NDG Studios team" />
+                </Helmet>                
                 <form className='contact-form-container' onSubmit={handleSubmit} >
                     <div className='contact-form-header'>How Can We Help?</div>
                     <div className='contact-form-sub-header'>

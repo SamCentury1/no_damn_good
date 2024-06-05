@@ -3,10 +3,17 @@ import './GamesPage.css'
 import NavBar from '../../components/NavBar/NavBar'
 import Footer from '../../components/Footer/Footer'
 import PortfolioCard from '../home_page/components/portfolio/components/portfolio_card/PortfolioCard'
+import { Helmet } from 'react-helmet'
 
 const GamesPage = () => {
   return (
     <div className='games-page-container'>
+        <Helmet>
+            <title>Games</title>
+            <meta name="games" content="Games & Puzzles we created" />
+        </Helmet>                     
+                    
+    
         <NavBar/>
 
         <div className='games-page-head-container'>

@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom'
 import Separator from '../../views/home_page/components/separator/Separator'
 import DetailsSection from './components/DetailsSection/DetailsSection'
 import Carousel from './components/Carousel/Carousel'
+import { Helmet } from 'react-helmet'
 // import { useNavigate } from 'react-router-dom'
 
 const GamePage = ({gameData}) => {
@@ -53,6 +54,11 @@ const GamePage = ({gameData}) => {
 
         return (
             <div className='game-page'>
+
+            <Helmet>
+                <title>data.title</title>
+                <meta name={data.gameName} content={data.description} />
+            </Helmet>                     
             
                 <NavBar/>
                 <div className='game-page-container'>

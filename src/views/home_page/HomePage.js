@@ -7,10 +7,16 @@ import Landing from './components/landing/Landing'
 import Separator from './components/separator/Separator'
 import Footer from '../../components/Footer/Footer'
 import NavBar from '../../components/NavBar/NavBar'
+import { Helmet } from 'react-helmet'
 
 const HomePage = () => {
   return (
     <div className='homepage-container'>
+      <Helmet>
+          <title>Home</title>
+          <meta name="home" content="Welcome to No Damn Good Studios - please clap" />
+      </Helmet>                     
+                  
       <NavBar/>  
       <Landing/>
       <AboutUs />

@@ -2,10 +2,17 @@ import React from 'react'
 import Footer from '../../../src/components/Footer/Footer.js'
 import './About.css'
 import NavBar from '../../components/NavBar/NavBar.js'
+import { Helmet } from 'react-helmet'
 
 const About = () => {
   return (
     <div className='about-main-container'>
+
+        <Helmet>
+            <title>About Us</title>
+            <meta name="about-us" content="No Damn Good Studios is a mobile developer specializing in casual puzzles" />
+        </Helmet>                     
+                    
         <NavBar/>
         
         <div className='about-background-image-container'>
