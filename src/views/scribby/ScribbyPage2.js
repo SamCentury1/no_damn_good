@@ -6,6 +6,8 @@ const ScribbyPage2 = () => {
     const gameData = {
         "title" : "Scribby - Word Puzzle Game",
         "description" : "An innovative and exciting game to increase your vocabulary!",
+        "appStoreLink": "/",
+        "googlePlayStoreLink": "https://play.google.com/store/apps/details?id=com.nodamngoodstudios.scribby",
         "gameName": "scribby",
         "images": 11,
         "synopsisText": [

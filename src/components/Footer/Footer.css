@@ -84,6 +84,7 @@
 
 .footer-title {
     font-size: clamp(14px, 5vw, 22px);
+    color: black;
 }
 
 .footer-divider {
@@ -117,6 +118,11 @@
 
 .footer-pages-item {
     padding: 10px 5px;
+}
+
+.footer-item-link {
+    text-decoration: none;    
+    color: black
 }
 
 @media only screen and (max-width: 768px) {

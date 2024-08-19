@@ -17,7 +17,7 @@ const Footer = () => {
       </div>
       <div className='footer-content-container'>
         <div className='footer-title-container'>
-          <div className='footer-title'>No Damn Good Studios, Ltd.</div>
+          <div className='footer-title'>No Damn Good Studios, Inc.</div>
         </div>
 
         <div className='footer-divider'></div>
@@ -50,10 +50,10 @@ const Footer = () => {
 
         <div className='footer-divider'></div>
         <div className='footer-pages-container'>
-          <div className='footer-pages-item'><Link to="/" className='navbar-item-link' >Home</Link></div>
-          <div className='footer-pages-item'><Link to="/about" className='navbar-item-link'>About</Link></div>
-          <div className='footer-pages-item'><Link to="/games" className='navbar-item-link'>Games</Link></div>
-          <div className='footer-pages-item'><Link to="/contact-us" className='navbar-item-link'>Contact Us</Link></div>
+          <div className='footer-pages-item'><Link to="/" className='footer-item-link' >Home</Link></div>
+          <div className='footer-pages-item'><Link to="/about" className='footer-item-link'>About</Link></div>
+          <div className='footer-pages-item'><Link to="/games" className='footer-item-link'>Games</Link></div>
+          <div className='footer-pages-item'><Link to="/contact-us" className='footer-item-link'>Contact Us</Link></div>
         </div>
       </div>
 

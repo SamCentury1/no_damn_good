@@ -3,7 +3,7 @@ import NavBar from '../NavBar/NavBar'
 import {motion} from 'framer-motion'
 import Footer from '../Footer/Footer'
 import './GamePage.css'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import Separator from '../../views/home_page/components/separator/Separator'
 import DetailsSection from './components/DetailsSection/DetailsSection'
 import Carousel from './components/Carousel/Carousel'
@@ -69,19 +69,22 @@ const GamePage = ({gameData}) => {
                         </div>
     
                         <div className='game-app-store-container'>
+                            {/* <Link to="/" className='navbar-item-link' >
                             <motion.img 
-                            className="game-app-store-logo" 
-                            src={require('../../assets/img/appstore.png')} 
-                            alt=''
-                            whileHover={{scale:1.1, y:-5}}
+                                className="game-app-store-logo" 
+                                src={require('../../assets/img/appstore.png')} 
+                                alt=''
+                                whileHover={{scale:1.1, y:-5}}
                             />
-                            <motion.img 
-                            className="game-app-store-logo" 
-                            src={require('../../assets/img/googleplaystore.png')} 
-                            alt=''
-                            whileHover={{scale:1.1, y:-5}}
-    
-                            />
+                            </Link>                             */}
+                            <Link to={data.googlePlayStoreLink} className='navbar-item-link' >
+                                <motion.img 
+                                className="game-app-store-logo" 
+                                src={require('../../assets/img/googleplaystore.png')} 
+                                alt=''
+                                whileHover={{scale:1.1, y:-5}}
+                                />
+                            </Link>
                         </div>                
                     </div>
     
