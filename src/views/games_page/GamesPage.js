@@ -22,14 +22,23 @@ const GamesPage = () => {
             <div className='games-page-head-label'>Games</div>
         </div>
 
-        <div className='games-page-content-section'>
+        {/* <div className='games-page-content-section'>
             <div className='coming-soon-label'>Coming Soon</div>
             <div className='coming-soon-container'>
                 <div>
                     < PortfolioCard app={'scribby'} />
                 </div>
             </div>
-        </div>
+        </div> */}
+
+        <div className='games-page-content-section'>
+            <div className='all-games-label'>All Games</div>
+            <div className='all-games-container'>
+                <div>
+                    < PortfolioCard app={'scribby'} />
+                </div>
+            </div>
+        </div>        
 
         <Footer/>
 

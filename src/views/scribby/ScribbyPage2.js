@@ -8,6 +8,7 @@ const ScribbyPage2 = () => {
         "description" : "An innovative and exciting game to increase your vocabulary!",
         "appStoreLink": "/",
         "googlePlayStoreLink": "https://play.google.com/store/apps/details?id=com.nodamngoodstudios.scribby",
+        "appleAppStoreLink": "https://apps.apple.com/us/app/scribby-word-puzzle-game/id6502534121",
         "gameName": "scribby",
         "images": 11,
         "synopsisText": [

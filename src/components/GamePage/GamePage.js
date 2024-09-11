@@ -69,14 +69,14 @@ const GamePage = ({gameData}) => {
                         </div>
     
                         <div className='game-app-store-container'>
-                            {/* <Link to="/" className='navbar-item-link' >
+                            <Link to={data.appleAppStoreLink} className='navbar-item-link' >
                             <motion.img 
                                 className="game-app-store-logo" 
                                 src={require('../../assets/img/appstore.png')} 
                                 alt=''
                                 whileHover={{scale:1.1, y:-5}}
                             />
-                            </Link>                             */}
+                            </Link>                            
                             <Link to={data.googlePlayStoreLink} className='navbar-item-link' >
                                 <motion.img 
                                 className="game-app-store-logo" 
