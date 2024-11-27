@@ -11,15 +11,21 @@ const Porfolio = () => {
     <div className='portfolio-container'>
 
         <div className='portfolio-label-container'> 
-          <div className='portfolio-label-text'>Coming Soon</div>
+          <div className='portfolio-label-text'>Games</div>
         </div>
 
-        <div 
-
-        >
+        <div >
           < PortfolioCard app={'scribby'} />
-
         </div>
+
+
+
+        {/* <div className='portfolio-label-container'> 
+          <div className='portfolio-label-text'>Coming Soon</div>
+        </div> */}
+
+
+
 
 
         {/* < BackgroundDecoration /> */}
