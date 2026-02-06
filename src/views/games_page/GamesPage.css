@@ -4,7 +4,15 @@
     height: 100%;
 }
 
+.game-right-panel-container {
+    font-family: "Courier New", Courier, monospace;
+    /* color: aquamarine; */
+}
 
+.game-right-panel-label, .game-right-panel-label-sub {
+    font-family: 'Rock Salt', cursive !important;
+    
+}
 
 .games-page-head-container {
     background-color: black;

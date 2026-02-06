@@ -56,7 +56,7 @@ const GamePage = ({gameData}) => {
             <div className='game-page'>
 
             <Helmet>
-                <title>{data.title}</title>
+                <title className='game-page-title'>{data.title}</title>
                 <meta name={data.gameName} content={data.description} />
             </Helmet>                     
             

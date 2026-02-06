@@ -15,6 +15,7 @@
 
 }
 .about-us-label {
+    font-family: "Rock Salt", cursive;
     font-size: clamp(26px, 2vw, 44px);
     color: white;
 }
@@ -43,6 +44,7 @@
 }
 
 .about-us-content-text {
+    font-family: "Courier New", Courier, monospace;
     color: white;
     font-size: clamp(18px, 2vw, 36px);
     font-weight: 100;

@@ -3,17 +3,17 @@
   "name": "No Damn Good Studios",
   "icons": [
     {
-      "src": "ndg_logo_svg.svg",
+      "src": "ndg_logo_official_svg.svg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "ndg_logo_svg.svg",
+      "src": "ndg_logo_official_svg.svg",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "ndg_logo_svg.svg",
+      "src": "ndg_logo_official_svg.svg",
       "type": "image/png",
       "sizes": "512x512"
     }

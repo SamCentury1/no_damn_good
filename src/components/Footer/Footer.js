@@ -11,7 +11,7 @@ const Footer = () => {
         <div className='footer-logo-container'>
           <img  
           className='footer-logo' 
-          src={require('../../assets/img/ndg_logo_svg.svg').default} 
+          src={require('../../assets/img/ndg_logo_official_svg.svg').default} 
           alt='' />
         </div>
       </div>

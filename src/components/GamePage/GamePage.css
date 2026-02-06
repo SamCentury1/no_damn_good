@@ -1,6 +1,7 @@
 
 
 .game-page-container {
+    
     width: 100%;
     height: calc(100vh - 60px);
     background-color: black;
@@ -106,6 +107,7 @@
 .game-section-label {
     font-size: 64px;
     color: white;
+    font-family: "Rock Salt", cursive;
 
 }
 

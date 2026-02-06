@@ -23,23 +23,26 @@ const About = () => {
             
             <div className='about-title-container'>
                 <div className='nav-bar-gap'></div> 
-                <div className='about-title-text'>About No Damn Good</div>
+                <div className='about-title-text'>About No Damn Good Studios</div>
             </div>
 
             <div className='about-content-container'>
                 <div className='about-origin-container'>
                     <div className='about-content-section-label'>Origins</div>
                     <div className='about-origin-content-section'>
-                        <div className='about-origin-content-image'>
+                        {/* <div className='about-origin-content-image'>
                             <div className='rock-salt-regular'>NDG</div>
-                        </div>
-                        <div className='about-origin-content-text'>
+                        </div> */}
+                        <div className='about-origin-content-text about-origin-content-text-text'>
 
-                            <p className='glass-effect'>Founded in 2024, we trace our fresh roots to the Canadian neighbourhood of Notre-Dame-de-Grâce in Montréal, Québec.</p>
+                            <p className='glass-effect'>Founded in 2024, we trace our fresh roots to the Canadian neighbourhood of Notre-Dame-de-Grâce in Montréal, Québec.
 
-                            <p className='glass-effect'>The Neighbourhood is known in Montréal as NDG (en dee gee) and its proud residents have affectionately referred to it as No Damn Good</p>
+                                The Neighbourhood is known in Montréal as NDG (en dee gee) and its proud residents have affectionately referred to it as No Damn Good
+                            </p>
+
+                            {/* <p className='glass-effect'></p> */}
                             <p className='glass-effect'>NDG being the cradle of the founding members, and being a great source of inspiration for the culture of the company, the studio was named in its honor</p>
-                            <p className='glass-effect'>Fast forward to, still 2024, the company boasts a whopping 1 employee and 1 cat. And the neighbourhood is still not good</p>
+                            <p className='glass-effect'>Fast forward to 2026, the company boasts a whopping one employee and one cat (contractor). And the neighbourhood is still not good</p>
 
                         </div>
                     </div>

@@ -67,6 +67,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 /* .scribby-page-container {
@@ -79,6 +80,7 @@
 
 .scribby-right-panel-container {
     width: 90%;
+    
 }
 
 .scribby-right-panel-item-container {
@@ -86,11 +88,13 @@
     width: 100%;
     /* height: 88px; */
     position: relative;
+    
 }
 
 
 .scribby-right-panel-item {
     font-size: 44px;
+    
 }
 
 .scribby-right-panel-item-divider {

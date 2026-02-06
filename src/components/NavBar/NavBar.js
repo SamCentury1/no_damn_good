@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import {motion } from 'framer-motion'
 import "./NavBar.css"
 import * as FaIcons from 'react-icons/fa'
-import ndgLogoWhite from '../../assets/img/ndg_logo_svg.svg'
+import ndgLogoWhite from '../../assets/img/ndg_logo_official_svg.svg'
 import { Link, useNavigate } from 'react-router-dom'
 
 const NavBar = () => {

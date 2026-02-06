@@ -28,7 +28,8 @@ const DetailsSection = ({content,index, gameName}) => {
                 "height":"100%",
                 "display": "flex",
                 // "flexWrap":"wrap",
-                "flexDirection": flexDirection,              
+                "flexDirection": flexDirection,     
+                "fontFamily": "Courier New"         
             }
             setStyle(style)
             // setName(gameName)
