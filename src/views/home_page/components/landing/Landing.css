@@ -15,6 +15,11 @@
     /* background-color: orange; */
     /* font-family:  */
 }
+.landing-logo {
+  width: 60%;
+  max-width: 1000px;
+  height: auto;
+}
 
 .landing-title {
     font-size: clamp(36px, 5vw, 106px);
@@ -28,6 +33,11 @@
 
 
 @media only screen and (max-width: 768px) {
+
+    .landing-logo {
+        width: 85%;
+        max-width: 350px;
+    }    
 
     .landing-container {
         background-color: black;
